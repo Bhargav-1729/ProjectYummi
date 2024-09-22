@@ -1,0 +1,65 @@
+/* HomePage.css */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.registration-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.option {
+    width: 200px;
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.footer-container {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-links a {
+    color: #ff5722;
+    margin: 0 10px;
+}

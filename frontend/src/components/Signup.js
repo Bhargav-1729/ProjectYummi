@@ -4,11 +4,11 @@ import { signupUser } from '../services/api';
 const Signup = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [username, setUsername] = useState('');
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const formData = { email, password };
-        
+        const formData = { username, email, password };
         console.log(formData);  // Add this to verify data before sending
         
         try {
@@ -23,6 +23,12 @@ const Signup = () => {
     return (
         <form onSubmit={handleSubmit}>
             <h2>Signup</h2>
+            <input
+                type ="text"
+                placeholder='username'
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+            />
             <input 
                 type="email" 
                 placeholder="Email" 
